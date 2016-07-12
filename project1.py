@@ -8,10 +8,10 @@ CITATION_URL = "http://storage.googleapis.com/codeskulptor-alg/alg_phys-cite.txt
 def compute_in_degrees(digraph):
     """Compute how many nodes enter current node"""
     degrees = {key: 0 for key in digraph.iterkeys()}
-    for _, adjacent in digraph.iteritems():
-        # print _, adjacent
-        for adj in adjacent:
-            degrees[adj] += 1
+    for value in digraph.itervaluess():
+       
+        for val in values:
+            degrees[val] += 1
     return degrees
 
 
