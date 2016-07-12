@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import urllib2
+import itertools
 
 
 CITATION_URL = "http://storage.googleapis.com/codeskulptor-alg/alg_phys-cite.txt"
