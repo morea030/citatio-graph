@@ -1,3 +1,14 @@
+"""Skripta za analizu citiranosti naučnih radova. Kao input uzima graf. U primeru koji je korišćen ispod,
+graf ima 27 770 čvorova (radova iz fizike visokih energija) i 352,768 grana (veza između pojedinačnih radova). 
+Program prvo računa citiranost svakog pojedinačnog rada, a zatim izračunava distribuciju dobijene citiranosti, koju potom normalizuje. 
+Nakon normalizacije skripta formira dijagram koji na ordinati ima normalizovanu distribuciju citiranosti, 
+a na apscisi broj citata svakog pojedinačnog rada.
+Na ovaj način prikazani podaci ukazuju na zastupljenost određene citiranosti rada u odnosu na ukupnu populaciju citiranosti radova. 
+U  navedonom primeru sa radovima iz fizike visokih energija, na osnovu grafika se može videti da najveći udeo u populaciji imaju
+radovi sa malim (jednocifrenim) brojem citata, dok radovi sa velikim (trocifrenim i četvorocifrenim) brojem citata zauzimaju najmanji
+udeo u populaciji. Drugim rečima, zavisnost između broja citata pojedinačnog rada, i zastupljenosti  količine radova sa tim brojem
+citatata u ukupnoj populaciji je obrnuto proporcionalna."""
+
 import matplotlib.pyplot as plt
 import urllib2
 import itertools
